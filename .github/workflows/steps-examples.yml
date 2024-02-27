@@ -1,0 +1,12 @@
+name: steps examples
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  marketplace:
+    runs-on: ubuntu-latest
+    steps:            
+      - name: executa comando
+        run: echo "Steps examples"
