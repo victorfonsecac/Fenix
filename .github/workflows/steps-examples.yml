@@ -7,12 +7,8 @@ on:
 jobs:
   marketplace:
     runs-on: ubuntu-latest
-    steps:            
-      - name: executa comando
-        run: echo "Steps examples"
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v4.0.2
-      - name: node verification
-              node  -–version
+steps:
+- uses: actions/checkout@v4- uses: actions/setup-node@v4  with:
+    node-version: 18- run: npm ci- run: npm test
 
             
