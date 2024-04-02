@@ -5,6 +5,7 @@
     - name: run ping
       ping:
       register: resultado
+      
     - name: show results
       debug:
         msg: '{{ resultado }}'
